@@ -1,0 +1,231 @@
+.resultsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--global-breakpoint-expanded);
+  margin: 0 auto;
+  gap: var(--global-size-unit-600);
+  font-family: var(--global-typography-font-family-base);
+}
+
+.summaryHeader {
+  display: flex;
+  flex-direction: column;
+  padding: var(--global-size-unit-400);
+  background-color: var(--theme-surface-container);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  border-radius: var(--component-card-radius);
+  gap: var(--global-size-unit-300);
+}
+
+.summaryTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--global-size-unit-200);
+}
+
+.fileTitle {
+  font-size: var(--global-typography-font-size-title-medium);
+  font-weight: var(--global-typography-font-weight-medium);
+  line-height: var(--global-typography-line-height-title-medium);
+  color: var(--theme-text-default);
+  margin: 0;
+}
+
+.resetButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--component-button-spacing-y) var(--component-button-spacing-x);
+  border-radius: var(--component-button-radius);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  background-color: transparent;
+  color: var(--theme-text-default);
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--component-button-font-size);
+  font-weight: var(--global-typography-font-weight-medium);
+  cursor: pointer;
+  transition: background-color var(--global-motion-duration-short2) var(--global-motion-easing-standard);
+}
+
+.resetButton:hover {
+  background-color: var(--theme-surface-container-high);
+}
+
+.countsRow {
+  display: flex;
+  gap: var(--global-size-unit-150);
+  flex-wrap: wrap;
+}
+
+.severityGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-size-unit-300);
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--global-size-unit-150);
+  border-bottom-width: var(--global-border-thin);
+  border-bottom-style: solid;
+  border-bottom-color: var(--theme-outline-variant);
+}
+
+.groupTitleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--global-size-unit-150);
+}
+
+.groupTitle {
+  font-size: var(--global-typography-font-size-title-small);
+  font-weight: var(--global-typography-font-weight-semibold);
+  line-height: var(--global-typography-line-height-title-small);
+  margin: 0;
+  color: var(--theme-text-default);
+}
+
+.groupContext {
+  font-size: var(--global-typography-font-size-body-medium);
+  line-height: var(--global-typography-line-height-body-medium);
+  color: var(--theme-text-muted);
+  margin: 0;
+}
+
+.issuesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-size-unit-200);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.issueCard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--global-size-unit-300) var(--global-size-unit-400);
+  border-radius: var(--component-card-radius);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  border-left-width: var(--global-size-unit-50);
+  border-left-style: solid;
+  border-left-color: var(--theme-outline-default);
+  gap: var(--global-size-unit-150);
+  background-color: var(--theme-surface-container);
+}
+
+.issueCardError {
+  border-left-color: var(--theme-color-error-color);
+}
+
+.issueCardWarning {
+  border-left-color: var(--theme-color-warning-color);
+}
+
+.issueCardInfo {
+  border-left-color: var(--theme-outline-default);
+}
+
+.issueHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--global-size-unit-150);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--component-badge-spacing-y) var(--global-size-unit-150);
+  border-radius: var(--component-badge-radius);
+  font-size: var(--component-badge-font-size);
+  font-weight: var(--global-typography-font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--global-typography-letter-spacing-wide);
+  background-color: var(--theme-surface-container-high);
+}
+
+.badgeError {
+  color: var(--theme-color-error-color);
+}
+
+.badgeWarning {
+  color: var(--theme-color-warning-color);
+}
+
+.badgeInfo {
+  color: var(--theme-text-muted);
+}
+
+.badgeCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--component-badge-spacing-y) var(--global-size-unit-100);
+  border-radius: var(--component-badge-radius);
+  font-size: var(--component-badge-font-size);
+  font-weight: var(--global-typography-font-weight-medium);
+  background-color: var(--theme-surface-container-high);
+  color: var(--theme-text-muted);
+}
+
+.issueMessage {
+  font-size: var(--global-typography-font-size-body-large);
+  line-height: var(--global-typography-line-height-body-large);
+  color: var(--theme-text-default);
+  margin: 0;
+}
+
+/* Zero Findings "All Clear" State */
+.allClearCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--global-size-unit-800) var(--global-size-unit-600);
+  background-color: var(--theme-surface-container);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  border-radius: var(--component-card-radius);
+  gap: var(--global-size-unit-200);
+}
+
+.allClearBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--component-badge-spacing-y) var(--global-size-unit-150);
+  border-radius: var(--component-badge-radius);
+  background-color: var(--theme-surface-container-high);
+  color: var(--theme-color-success-color);
+  font-size: var(--component-badge-font-size);
+  font-weight: var(--global-typography-font-weight-semibold);
+  letter-spacing: var(--global-typography-letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.allClearTitle {
+  font-size: var(--global-typography-font-size-headline-small);
+  font-weight: var(--global-typography-font-weight-medium);
+  line-height: var(--global-typography-line-height-headline-small);
+  color: var(--theme-text-default);
+  margin: 0;
+}
+
+.allClearDescription {
+  font-size: var(--global-typography-font-size-body-large);
+  line-height: var(--global-typography-line-height-body-large);
+  color: var(--theme-text-muted);
+  max-width: var(--global-breakpoint-medium);
+  margin: 0;
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Tokenlint Test",
+  "invalid": true,
+  "missing_brace": [ 1, 2, 3

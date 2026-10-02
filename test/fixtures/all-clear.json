@@ -1,0 +1,95 @@
+{
+  "$description": "Zero findings test fixture",
+  "primitive": {
+    "black": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "white": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    }
+  },
+  "theme": {
+    "Primary": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Primary": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Primary Container": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Primary Container": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Secondary": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Secondary": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Secondary Container": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Secondary Container": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Tertiary": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Tertiary": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Tertiary Container": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Tertiary Container": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Error": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Error": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Error Container": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Error Container": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Surface": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "On-Surface": {
+      "$type": "color",
+      "$value": "{primitive.white}"
+    },
+    "Outline": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    },
+    "Background": {
+      "$type": "color",
+      "$value": "{primitive.black}"
+    }
+  }
+}
