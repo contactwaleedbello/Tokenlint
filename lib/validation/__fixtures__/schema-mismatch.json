@@ -1,0 +1,14 @@
+{
+  "project": "Sample App",
+  "version": "1.0.0",
+  "theme": {
+    "colors": {
+      "primary": "#005459",
+      "secondary": "#354866"
+    },
+    "spacing": {
+      "small": 8,
+      "large": 24
+    }
+  }
+}
