@@ -1,0 +1,12 @@
+{
+  "color": {
+    "primitive-teal": {
+      "$type": "color",
+      "$value": "#005459"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "{color.primitive-teal}"
+    }
+  }
+}

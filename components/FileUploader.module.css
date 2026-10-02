@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: var(--global-breakpoint-medium);
+  margin: 0 auto;
+  gap: var(--global-size-unit-400);
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--global-size-unit-800) var(--global-size-unit-600);
+  background-color: var(--theme-surface-container);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  border-radius: var(--component-card-radius);
+  text-align: center;
+  cursor: pointer;
+  transition: border-color var(--global-motion-duration-short3) var(--global-motion-easing-standard),
+              background-color var(--global-motion-duration-short3) var(--global-motion-easing-standard);
+}
+
+.dropzoneActive {
+  border-color: var(--theme-color-primary-color);
+  background-color: var(--theme-surface-container-high);
+}
+
+.fileInput {
+  display: none;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--foundations-icons-sizes-medium);
+  height: var(--foundations-icons-sizes-medium);
+  margin-bottom: var(--global-size-unit-300);
+  color: var(--theme-icon-default);
+}
+
+.heading {
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--global-typography-font-size-title-medium);
+  font-weight: var(--global-typography-font-weight-medium);
+  line-height: var(--global-typography-line-height-title-medium);
+  color: var(--theme-text-default);
+  margin: 0 0 var(--global-size-unit-100) 0;
+}
+
+.instruction {
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--global-typography-font-size-body-medium);
+  font-weight: var(--global-typography-font-weight-regular);
+  line-height: var(--global-typography-line-height-body-medium);
+  color: var(--theme-text-muted);
+  margin: 0 0 var(--global-size-unit-400) 0;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--component-button-spacing-y) var(--component-button-spacing-x);
+  border-radius: var(--component-button-radius);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  background-color: var(--theme-surface-container-high);
+  color: var(--theme-text-default);
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--component-button-font-size);
+  font-weight: var(--global-typography-font-weight-medium);
+  cursor: pointer;
+  transition: background-color var(--global-motion-duration-short2) var(--global-motion-easing-standard);
+}
+
+.button:hover {
+  background-color: var(--theme-surface-page);
+}
+
+.errorBanner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--global-size-unit-400);
+  border-radius: var(--component-card-radius);
+  background-color: var(--theme-surface-container);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  border-left-width: var(--global-size-unit-50);
+  border-left-style: solid;
+  border-left-color: var(--theme-color-error-color);
+  gap: var(--global-size-unit-150);
+}
+
+.errorHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--global-size-unit-150);
+  flex-wrap: wrap;
+}
+
+.errorTag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--component-badge-spacing-y) var(--global-size-unit-150);
+  border-radius: var(--component-badge-radius);
+  background-color: var(--theme-surface-container-high);
+  color: var(--theme-color-error-color);
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--component-badge-font-size);
+  font-weight: var(--global-typography-font-weight-semibold);
+  letter-spacing: var(--global-typography-letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.errorTitle {
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--global-typography-font-size-title-small);
+  font-weight: var(--global-typography-font-weight-semibold);
+  line-height: var(--global-typography-line-height-title-small);
+  color: var(--theme-text-default);
+  margin: 0;
+}
+
+.errorDescription {
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--global-typography-font-size-body-medium);
+  font-weight: var(--global-typography-font-weight-regular);
+  line-height: var(--global-typography-line-height-body-medium);
+  color: var(--theme-text-muted);
+  margin: 0;
+}
+
+.fileName {
+  font-family: var(--global-typography-font-family-mono);
+  font-size: var(--global-typography-font-size-body-small);
+  color: var(--theme-text-muted);
+}

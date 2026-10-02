@@ -1,0 +1,98 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--global-size-unit-600) var(--global-size-unit-400) var(--global-size-unit-800);
+  background-color: var(--theme-surface-page);
+  color: var(--theme-text-default);
+  font-family: var(--global-typography-font-family-base);
+  transition: background-color var(--global-motion-duration-medium1) var(--global-motion-easing-standard),
+              color var(--global-motion-duration-medium1) var(--global-motion-easing-standard);
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--global-breakpoint-expanded);
+  margin-bottom: var(--global-size-unit-600);
+}
+
+.brand {
+  font-size: var(--global-typography-font-size-title-medium);
+  font-weight: var(--global-typography-font-weight-medium);
+  color: var(--theme-text-default);
+}
+
+.themeToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--global-size-unit-100);
+  padding: var(--component-button-spacing-y) var(--component-button-spacing-x);
+  border-radius: var(--component-button-radius);
+  border-width: var(--global-border-thin);
+  border-style: solid;
+  border-color: var(--theme-outline-variant);
+  background-color: var(--theme-surface-container);
+  color: var(--theme-text-default);
+  font-family: var(--global-typography-font-family-base);
+  font-size: var(--component-button-font-size);
+  font-weight: var(--global-typography-font-weight-medium);
+  cursor: pointer;
+  transition: background-color var(--global-motion-duration-short2) var(--global-motion-easing-standard);
+}
+
+.themeToggle:hover {
+  background-color: var(--theme-surface-container-high);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--global-size-unit-800);
+  width: 100%;
+  max-width: var(--global-breakpoint-medium);
+}
+
+.title {
+  font-size: var(--global-typography-font-size-headline-large);
+  font-weight: var(--global-typography-font-weight-medium);
+  line-height: var(--global-typography-line-height-headline-large);
+  color: var(--theme-text-default);
+  margin: 0 0 var(--global-size-unit-150) 0;
+}
+
+.subtitle {
+  font-size: var(--global-typography-font-size-body-large);
+  font-weight: var(--global-typography-font-weight-regular);
+  line-height: var(--global-typography-line-height-body-large);
+  color: var(--theme-text-muted);
+  margin: 0;
+}
+
+.sampleActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--global-size-unit-150);
+  margin-top: var(--global-size-unit-300);
+}
+
+.sampleBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--component-badge-spacing-y) var(--component-badge-spacing-x);
+  font-size: var(--global-typography-font-size-body-small);
+  color: var(--theme-text-muted);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sampleBtn:hover {
+  color: var(--theme-text-default);
+}
